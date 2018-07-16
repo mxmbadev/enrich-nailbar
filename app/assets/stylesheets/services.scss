@@ -1,0 +1,61 @@
+@import "all";
+
+#services{
+  margin-top: 5%;
+  hr{
+    width: 10%;
+    background:$wine;
+    height: 5px;
+  }
+  .mani-pedi{
+    margin-top: 5%;
+    background-image: url('/assets/manicure-pedi-service-img2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    .mani-pedi-text{
+      padding: 13% 0;
+      text-align: right;
+      h4{
+        background: #fff;
+        padding: 20px 30px;
+        display: inline-flex;
+      }
+    }
+  }
+  .mani-pedi-organic{
+    border-top:4px solid #fff;
+    background-image: url('/assets/manicure-pedi-org.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    .mani-pedi-organic-text{
+      padding: 13% 0;
+      text-align: left;
+      h4{
+        background: #fff;
+        padding: 20px 30px;
+        display: inline-flex;
+      }
+    }
+  }
+  .mani-pedi-extras{
+    border-top:4px solid #fff;
+    background-image: url('/assets/extras.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    .mani-pedi-extras-text{
+      padding: 13% 0;
+      text-align: right;
+      h4{
+        background: #fff;
+        padding: 20px 30px;
+        display: inline-flex;
+      }
+    }
+  }
+}

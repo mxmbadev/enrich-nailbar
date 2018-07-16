@@ -1,0 +1,13 @@
+@import "all";
+#about{
+  margin-top: 5%;
+  hr{
+    width: 10%;
+    background:$wine;
+    height: 5px;
+  }
+  .about-text{
+    margin-top: 5%;
+    text-align: left;
+  }
+}
