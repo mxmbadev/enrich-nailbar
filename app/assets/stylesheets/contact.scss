@@ -1,0 +1,16 @@
+@import "all";
+#contact{
+  background: $black-grey;
+  margin-top: 10%;
+  .contact-title{
+    margin-top: 5%;
+    h3{
+      color: #fff;
+    }
+    hr{
+      width: 10%;
+      background:$wine;
+      height: 5px;
+    }
+  }
+}
