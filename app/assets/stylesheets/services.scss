@@ -62,18 +62,15 @@
 
 // Manicure & Pedicure Service Page
 #mani-pedi{
-  background-image: url('/assets/manicure-pedi-service-img2.jpg');
+  background-image: url('/assets/manicure-pedi-service-img.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
   background-size: cover;
   height: 70vh;
   .mani-pedi-bg-text{
-    margin: 0 auto;
     h1{
       margin: 0px;
-      background: #fff;
-      padding: 25px 30px;
     }
   } 
 }
@@ -100,6 +97,49 @@
       }
     }
     .service-1, .service-2, .service-3{
+      margin-top: 5%;
+    }
+  }
+}
+
+
+//Organic Services
+#organic{
+  background-image: url('/assets/manicure-pedi-org-2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  .organic-bg-text{
+    h1{
+      margin: 0px;
+    }
+  } 
+}
+#organic-services{
+  .service-intro{
+    margin-top:10%;
+    p{
+      font-size: 18px;
+      text-align: center;
+    }
+    hr{
+      margin-top: 10%;
+      height: 2px;
+      background: #cecece;
+    }
+  }
+  .services{
+    .prices{
+      margin: 0px;
+      padding: 0px;
+      p{
+        display: inline-block;
+        font-size: 18px;
+      }
+    }
+    .service-1, .service-2{
       margin-top: 5%;
     }
   }
