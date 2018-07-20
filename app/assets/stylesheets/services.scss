@@ -98,6 +98,9 @@
     }
     .service-1, .service-2, .service-3{
       margin-top: 5%;
+      p{
+        font-size: 18px;
+      }
     }
   }
 }
@@ -137,6 +140,52 @@
       p{
         display: inline-block;
         font-size: 18px;
+      }
+    }
+    .service-1, .service-2{
+      margin-top: 5%;
+      p{
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+//Extras Services
+#extras{
+  background-image: url('/assets/extras-reversed.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  .extras-bg-text{
+    h1{
+      margin: 0px;
+    }
+  } 
+}
+#extras-services{
+  .service-intro{
+    margin-top:10%;
+    p{
+      font-size: 18px;
+      text-align: center;
+    }
+    hr{
+      margin-top: 10%;
+      height: 2px;
+      background: #cecece;
+    }
+  }
+  .services{
+    .prices{
+      margin: 0px;
+      padding: 0px;
+      p, ul, li{
+        font-size: 18px;
+        list-style-type: circle;
+        list-style-position: inside;
       }
     }
     .service-1, .service-2{
