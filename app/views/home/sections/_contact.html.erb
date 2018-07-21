@@ -1,11 +1,73 @@
+<div id="map" class="row">
+  <div class="col s12">
+    <div class="video-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12894.168299428267!2d-86.8156625!3d36.1046493!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe01fd0000acb4485!2sThe+Nail+Bar+(Enrich+%26+CO)!5e0!3m2!1sen!2sus!4v1532138341381" width="1920" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
 <div id="contact" class="row">
   <div class="container">
-    <div class="col s12 m12 l12 contact-title">
-      <h3>Contact Us</h3>
-      <hr class="line-title">
+    <div class="col s12 m8 l8 contact-title">
+      <div class="col s12">
+        <h3>Contact Us</h3>
+        <hr class="line-title">
+      </div>
+      <div class="col s12 contact-form">
+        <%= form_for @contact do |f| %>
+          <div class="input-field col s12 m4 l4">
+            <%= f.label :name %>
+            <%= f.text_field :name, required: true, class: "contact-input" %>
+          </div>
+
+
+          <div class="input-field col s12 m4 l4">
+            <%= f.label :email %>
+            <%= f.email_field :email, required: true, class: "contact-input"%>
+          </div>
+
+          <div class="input-field col s12 m4 l4">
+            <%= f.label :phone %>
+            <%= f.telephone_field :phone, required: true, class: "contact-input"%>
+          </div>
+
+          <div class="input-field col s12 m12 l12">
+            <%= f.label :message %>
+            <%= f.text_area :message, as: :text, class: "materialize-textarea contact-input"%>
+          </div>
+
+
+          <div class="input-field col s12 m12 l12 hide">
+            <%= f.label :nickname %>
+            <%= f.text_field :nickname, hint: 'leave this field blank' %>
+          </div>
+
+          <div class="input-field col s12 m12 l12">
+            <button class="btn waves-effect waves-light submit-btn" type="submit" name="action">Send</button>
+          </div>
+        <%end%>
+
+        <script>
+          $('#textarea1').val('New Text');
+          M.textareaAutoResize($('#textarea1'));
+        </script>
+      </div>
     </div>
-    <div class="col s8 contact-form">
-      
+    <div class="col s12 m4 contact-title">
+      <div class="col s12">
+        <h3>Visit Us</h3>
+        <hr class="line-title">
+      </div>
+      <div class="col s12 m6 store-hours">
+        <p class="date">Monday - Saturday</p>
+        <p class="hours">9AM - 8PM</p>
+        <p class="date">Sunday</p>
+        <p class="hours">11AM - 7PM</p>
+      </div>
+      <div class="col s12 m6 store-location">
+        <p class="location-title">Address</p>
+        <a href="https://goo.gl/maps/t1YWyFDZW542"><p class="location-address">4005 Hillsboro Pike #101, Nashville, TN 37215</p></a>
+        <a href="tel:6158914767"><p class="store-number">(615) 891-4767</p></a>
+      </div>  
     </div>
   </div>
 </div>

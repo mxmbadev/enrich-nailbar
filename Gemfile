@@ -26,6 +26,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'materialize-sass'
 # Mail form gem for contact form
 gem 'mail_form'
+#Jquery
+gem 'jquery-rails'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
