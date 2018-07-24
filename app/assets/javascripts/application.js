@@ -16,3 +16,28 @@
 //= require jquery
 //= require materialize-sprockets
 //= require_tree .
+
+$(document).ready(function(){
+  $('a').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname) {
+      var $target = $(this.hash);
+      $target = $target.length && $target
+      || $('[name=' + this.hash.slice(1) +']');
+      if ($target.length) {
+        var targetOffset = $target.offset().top;
+        $('html,body')
+        .animate({scrollTop: targetOffset}, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+$(document).ready(function(){
+  setTimeout(function(){
+    $('#notice-wrapper').fadeOut("slow", function(){
+      $(this).remove();
+    })
+  }, 3000);
+});

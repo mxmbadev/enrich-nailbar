@@ -47,14 +47,25 @@ p{
                           Navbar
   ======================================================*/
 #navbar {
-  background: white;
-  color: rgb(13, 26, 38);
-  position: relative;
+  background: transparent;
+  // color: rgb(13, 26, 38);
+  color: #fff;
+  position: fixed;
   top: 0;
   height: 70px;
   line-height: 70px;
   width: 100%;
   z-index: 10;
+  @include transition(all, .3s);
+}
+
+.scrolled{
+  background: #fff !important;
+  @include transition(all, .3s);
+  li a{
+    color: $black-grey !important;
+    @include transition(all, .3s);
+  }
 }
 
 .nav-wrapper {
@@ -112,7 +123,8 @@ p{
 }
 
 #navbar li a {
-  color: rgb(13, 26, 38);
+  // color: rgb(13, 26, 38);
+  color: #fff;
   display: block;
   font-size: 0.9em;
   height: 50px;
@@ -348,4 +360,23 @@ p{
   color: rgb(28, 121, 184);
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
+}
+
+
+// Notice Messages
+#notice-wrapper{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 1050;
+  background: $wine;
+  p{
+    padding: 1.7rem 0;
+    text-align: center;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+  }
 }

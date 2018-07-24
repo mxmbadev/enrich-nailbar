@@ -6,11 +6,17 @@
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
   </head>
+
+  <% if notice %>
+    <div id="notice-wrapper">
+      <p class="notice"><%= notice %></p>
+    </div>
+  <%elsif alert%>
+    <div id="notice-wrapper">
+      <p class="alert"><%= alert %></p>
+    </div>
+  <%end%>
 
   <nav id="navbar" class="">
     <div class="nav-wrapper">
@@ -51,6 +57,20 @@
   </body>
 
   <script>
+    // OnScroll style nav
+
+    $(function() {
+      var header = $("#navbar");
+    
+      $(window).scroll(function() {    
+          var scroll = $(window).scrollTop();
+          if (scroll >= 50) {
+              header.addClass("scrolled");
+          } else {
+              header.removeClass("scrolled");
+          }
+      });
+    });
 
     // Responsive Toggle Navigation =============================================
     let menuIcon = document.querySelector('.menuIcon');
