@@ -17,6 +17,7 @@
 //= require materialize-sprockets
 //= require_tree .
 
+
 $(document).ready(function(){
   $('a').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
@@ -40,4 +41,50 @@ $(document).ready(function(){
       $(this).remove();
     })
   }, 3000);
+});
+
+
+
+
+// OnScroll style nav
+
+$(function() {
+  var header = $("#navbar");
+
+  $(window).scroll(function() {    
+      var scroll = $(window).scrollTop();
+      if (scroll >= 20) {
+          header.addClass("scrolled");
+          header.css("box-shadow", "0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2)")
+      } else {
+          header.removeClass("scrolled");
+          header.css("box-shadow", "none")
+      }
+  });
+});
+
+// Responsive Toggle Navigation =============================================
+let menuIcon = document.querySelector('.menuIcon');
+let nav = document.querySelector('.overlay-menu');
+
+menuIcon.addEventListener('click', () => {
+    if (nav.style.transform != 'translateX(0%)') {
+        nav.style.transform = 'translateX(0%)';
+        nav.style.transition = 'transform 0.2s ease-out';
+    } else { 
+        nav.style.transform = 'translateX(-100%)';
+        nav.style.transition = 'transform 0.2s ease-out';
+    }
+});
+
+
+// Toggle Menu Icon ========================================
+let toggleIcon = document.querySelector('.menuIcon');
+
+toggleIcon.addEventListener('click', () => {
+    if (toggleIcon.className != 'menuIcon toggle') {
+        toggleIcon.className += ' toggle';
+    } else {
+        toggleIcon.className = 'menuIcon';
+    }
 });

@@ -22,5 +22,151 @@ header.home-bg{
       padding: 20px 30px;
       margin: 0px;
     }
+    h1:before {
+      content:'';
+      color: $wine;
+      animation:write 10s linear infinite;
+      animation-fill-mode: forwards;
+    }
+    
+    @keyframes write {
+      1% {
+        content:'B';
+      }
+      3% {
+        content:'Be';
+      }
+      6% {
+        content:'Bea';
+      }
+      6% {
+        content:'Beau';
+      }
+      8% {
+        content:'Beaut';
+      }
+      10% {
+        content:'Beautif';
+      }
+      12% {
+        content:'Beautifu';
+      }
+      14%{
+        content: 'Beautiful'
+      }
+      26% {
+        content:'Beautiful';
+      }
+      27% {
+        content:'Beautif';
+      }
+      28% {
+        content:'Beauti';
+      }
+      29% {
+        content:'Beaut';
+      }
+      30% {
+        content:'Beau';
+      }
+      31% {
+        content:'Bea';
+      }
+      32% {
+        content:'Be';
+      }
+      33% {
+        content:'B';
+      }
+      34% {
+        content:'';
+      }
+      36% {
+        content:'E';
+      }
+      38% {
+        content:'El';
+      }
+      40% {
+        content:'Ele';
+      }
+      41% {
+        content:'Eleg';
+      }
+      42% {
+        content:'Elega';
+      }
+      44% {
+        content:'Elegan';
+      }
+      46% {
+        content:'Elegant';
+      }
+      58% {
+        content:'Elegant';
+      }
+      59% {
+        content:'Elegan';
+      }
+      60% {
+        content:'Elega';
+      }
+      61% {
+        content:'Eleg';
+      }
+      62% {
+        content:'Ele';
+      }
+      63% {
+        content:'El';
+      }
+      64% {
+        content:'E';
+      }
+      
+      65% {
+        content:'';
+      }
+      67% {
+        content:'F';
+      }
+      69% {
+        content:'Fa';
+      }
+      
+      71% {
+        content:'Fan';
+      }
+      73% {
+        content:'Fanc';
+      }
+      75% {
+        content:'Fancy';
+      }
+      87% {
+        content:'Fancy';
+      }
+      89% {
+        content:'Fancy';
+      }
+      90% {
+        content:'Fanc';
+      }
+      91% {
+        content:'Fan';
+      }
+      92% {
+        content:'Fa';
+      }
+      93%{
+        content:'F'
+      }
+      94%{
+        content: ''
+      }
+      100%{
+        content: ''
+      }
+    }
   }
 }

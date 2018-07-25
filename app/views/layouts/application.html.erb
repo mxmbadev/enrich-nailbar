@@ -18,86 +18,68 @@
     </div>
   <%end%>
 
-  <nav id="navbar" class="">
-    <div class="nav-wrapper">
-      <!-- Navbar Logo -->
-      <div class="logo">
-        <!-- Logo Placeholder for Inlustration -->
-        <a href="#home">SOIRÉE NAIL LOUNGE</a>
+  <% if current_page?(root_path) %>
+    <nav id="navbar" class="">
+      <div class="nav-wrapper">
+        <!-- Navbar Logo -->
+        <div class="logo">
+          <!-- Logo Placeholder for Inlustration -->
+          <a href="<%= root_path %>">SOIRÉE NAIL LOUNGE</a>
+        </div>
+        <!-- Navbar Links -->
+        <ul id="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-
-      <!-- Navbar Links -->
-      <ul id="menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    </nav>
+    <!-- Menu Icon -->
+    <div class="menuIcon">
+      <span class="icon icon-bars"></span>
+      <span class="icon icon-bars overlay"></span>
     </div>
-  </nav>
-
-
-  <!-- Menu Icon -->
-  <div class="menuIcon">
-    <span class="icon icon-bars"></span>
-    <span class="icon icon-bars overlay"></span>
-  </div>
-
-
-  <div class="overlay-menu">
-    <ul id="menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-  </div>
+    <div class="overlay-menu">
+      <ul id="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+  <%else%>
+    <nav id="navbar" class="second-nav">
+      <div class="nav-wrapper">
+        <!-- Navbar Logo -->
+        <div class="logo">
+          <!-- Logo Placeholder for Inlustration -->
+          <a href="<%=root_path%>">SOIRÉE NAIL LOUNGE</a>
+        </div>
+        <!-- Navbar Links -->
+        <ul id="menu">
+          <li><a href="<%= root_path %>">Home</a></li>
+          <li><a href="<%= root_path %>#services">Services</a></li>
+          <li><a href="<%= root_path %>#about">About</a></li>
+          <li><a href="<%= root_path %>#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Menu Icon -->
+    <div class="menuIcon">
+      <span class="icon icon-bars"></span>
+      <span class="icon icon-bars overlay"></span>
+    </div>
+    <div class="overlay-menu">
+      <ul id="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+  <%end%>
   <body>
     <%= yield %>
   </body>
-
-  <script>
-    // OnScroll style nav
-
-    $(function() {
-      var header = $("#navbar");
-    
-      $(window).scroll(function() {    
-          var scroll = $(window).scrollTop();
-          if (scroll >= 50) {
-              header.addClass("scrolled");
-          } else {
-              header.removeClass("scrolled");
-          }
-      });
-    });
-
-    // Responsive Toggle Navigation =============================================
-    let menuIcon = document.querySelector('.menuIcon');
-    let nav = document.querySelector('.overlay-menu');
-
-    menuIcon.addEventListener('click', () => {
-        if (nav.style.transform != 'translateX(0%)') {
-            nav.style.transform = 'translateX(0%)';
-            nav.style.transition = 'transform 0.2s ease-out';
-        } else { 
-            nav.style.transform = 'translateX(-100%)';
-            nav.style.transition = 'transform 0.2s ease-out';
-        }
-    });
-
-
-    // Toggle Menu Icon ========================================
-    let toggleIcon = document.querySelector('.menuIcon');
-
-    toggleIcon.addEventListener('click', () => {
-        if (toggleIcon.className != 'menuIcon toggle') {
-            toggleIcon.className += ' toggle';
-        } else {
-            toggleIcon.className = 'menuIcon';
-        }
-    });
-  </script>
-
-
 </html>
