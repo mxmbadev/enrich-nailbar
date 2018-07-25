@@ -82,12 +82,14 @@ p{
   margin: auto;
   text-align: center;
   width: 70%;
-} @media(max-width: 768px) {
+  } 
+  @media(max-width: 768px) {
     .nav-wrapper {
       width: 90%;
     }
-  } @media(max-width: 638px) {
-      .nav-wrapper {
+  } 
+  @media(max-width: 638px) {
+    .nav-wrapper {
         width: 100%;
       }
     } 
@@ -103,11 +105,12 @@ p{
   a{
     color: #000;
   }
-} @media(max-width: 768px) {
-    .logo {
-/*       margin-left: 5px; */
-    }
-  }
+} 
+@media(max-width: 768px) {
+  .logo {
+  /* margin-left: 5px; */
+   }
+}
 
 #navbar ul {
   display: inline-block;
@@ -118,15 +121,17 @@ p{
   text-align: right;
   transition: transform 0.5s ease-out;
   -webkit-transition: transform 0.5s ease-out;
-} @media(max-width: 640px) {
+}
+@media(max-width: 640px) {
+  #navbar ul {
+    display: none;
+  }
+} 
+@media(orientation: landscape) {
     #navbar ul {
-      display: none;
+      display: inline-block;
     }
-  } @media(orientation: landscape) {
-      #navbar ul {
-        display: inline-block;
-      }
-    }
+}
 
 #navbar li {
   display: inline-block;
@@ -137,7 +142,7 @@ p{
   color: #fff;
   display: block;
   font-size: 0.9em;
-  height: 50px;
+  height: 70px;
   letter-spacing: 1px;
   margin: 0 20px;
   padding: 0 4px;
@@ -149,8 +154,8 @@ p{
 }
 
 #navbar li a:hover {
-  border-bottom: 1px solid rgb(28, 121, 184);
-  color: rgb(28, 121, 184);
+  border-bottom: 1px solid #000;;
+  color:#fff;;
   transition: all 1s ease;
   -webkit-transition: all 1s ease;
 }
@@ -330,8 +335,9 @@ p{
                    Responsive Mobile Menu 
   ======================================================*/
 .overlay-menu {
-  background: lightblue;
-  color: rgb(13, 26, 38);
+  background:$wine;
+  opacity: 0.9;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -367,7 +373,7 @@ p{
 
 .overlay-menu li a:hover,
 .overlay-menu li a:active {
-  color: rgb(28, 121, 184);
+  color: #000;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
