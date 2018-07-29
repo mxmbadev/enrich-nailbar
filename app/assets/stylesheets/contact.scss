@@ -17,6 +17,9 @@
   .contact-form{
     margin-top: 5%;
     margin-bottom: 5%;
+    .contact-input{
+      color: #fff;
+    }
     .contact-input:focus{
       border-bottom-color: $wine;
       box-shadow: 0 1px 0 0 $wine;
