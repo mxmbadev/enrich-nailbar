@@ -58,6 +58,23 @@
       }
     }
   }
+  .wax{
+    border-top:4px solid #fff;
+    background-image: url('/assets/wax.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    .wax-text{
+      padding: 13% 0;
+      text-align: left;
+      h4{
+        background: #fff;
+        padding: 20px 30px;
+        display: inline-flex;
+      }
+    }
+  }
 }
 
 // Manicure & Pedicure Service Page
@@ -166,6 +183,49 @@
   } 
 }
 #extras-services{
+  .service-intro{
+    margin-top:10%;
+    p{
+      font-size: 18px;
+      text-align: center;
+    }
+    hr{
+      margin-top: 10%;
+      height: 2px;
+      background: #cecece;
+    }
+  }
+  .services{
+    .prices{
+      margin: 0px;
+      padding: 0px;
+      p, ul, li{
+        font-size: 18px;
+        list-style-type: circle;
+        list-style-position: inside;
+      }
+    }
+    .service-1, .service-2{
+      margin-top: 5%;
+    }
+  }
+}
+
+//Waxing Services
+#wax{
+  background-image: url('/assets/wax.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  .wax-bg-text{
+    h1{
+      margin: 0px;
+    }
+  } 
+}
+#wax-services{
   .service-intro{
     margin-top:10%;
     p{
