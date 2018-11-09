@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-
+  
   <% if notice %>
     <div id="notice-wrapper">
       <p class="notice"><%= notice %></p>
@@ -22,6 +22,9 @@
   <%end%>
 
   <% if current_page?(root_path) %>
+    <div class="newMSGhome">
+      <p>New Prices for our Organic Services! Some Waxing & Eyelashes are 50% OFF!</p>
+    </div>
     <nav id="navbar" class="">
       <div class="nav-wrapper">
         <!-- Navbar Logo -->
@@ -52,6 +55,9 @@
         </ul>
     </div>
   <%else%>
+    <div class="newMSGother">
+      <p>New Prices for our Organic Services! Some Waxing & Eyelashes are 50% OFF!</p>
+    </div>
     <nav id="navbar" class="second-nav">
       <div class="nav-wrapper">
         <!-- Navbar Logo -->
@@ -82,6 +88,7 @@
         </ul>
     </div>
   <%end%>
+  
   <body>
     <%= yield %>
   </body>
