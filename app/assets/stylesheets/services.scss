@@ -48,10 +48,22 @@
     background-attachment: scroll;
     background-position: center;
     background-size: cover;
+    -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
     .mani-pedi-extras-text{
       padding: 13% 0;
       text-align: right;
       h4{
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
         background: #fff;
         padding: 20px 30px;
         display: inline-flex;
@@ -65,10 +77,22 @@
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
     .wax-text{
       padding: 13% 0;
       text-align: left;
       h4{
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
         background: #fff;
         padding: 20px 30px;
         display: inline-flex;
