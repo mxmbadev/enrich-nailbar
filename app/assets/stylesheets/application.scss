@@ -198,6 +198,16 @@ p{
 /*======================================================
                     Mobile Menu Menu Icon
   ======================================================*/
+@media(max-width: 750px) {
+    .mobile-full-width{
+        max-width: 100% !important;
+        width: auto !important;
+        p{
+            font-size: 12px;
+        }
+    }
+}
+
 @media(max-width: 640px) {
   .menuIcon {
     cursor: pointer;
